@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{41A468F6-7678-41D5-BE83-3230F1338769}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BarcodeChecking.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ENG\BarcodeChecking_ENG.bdsproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="THA\BarcodeChecking_THA.bdsproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BarcodeChecking">
+        <MSBuild Projects="BarcodeChecking.dproj"/>
+    </Target>
+    <Target Name="BarcodeChecking:Clean">
+        <MSBuild Projects="BarcodeChecking.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeChecking:Make">
+        <MSBuild Projects="BarcodeChecking.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BarcodeChecking_ENG">
+        <MSBuild Projects="ENG\BarcodeChecking_ENG.bdsproj"/>
+    </Target>
+    <Target Name="BarcodeChecking_ENG:Clean">
+        <MSBuild Projects="ENG\BarcodeChecking_ENG.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeChecking_ENG:Make">
+        <MSBuild Projects="ENG\BarcodeChecking_ENG.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="BarcodeChecking_THA">
+        <MSBuild Projects="THA\BarcodeChecking_THA.bdsproj"/>
+    </Target>
+    <Target Name="BarcodeChecking_THA:Clean">
+        <MSBuild Projects="THA\BarcodeChecking_THA.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeChecking_THA:Make">
+        <MSBuild Projects="THA\BarcodeChecking_THA.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BarcodeChecking;BarcodeChecking_ENG;BarcodeChecking_THA"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BarcodeChecking:Clean;BarcodeChecking_ENG:Clean;BarcodeChecking_THA:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BarcodeChecking:Make;BarcodeChecking_ENG:Make;BarcodeChecking_THA:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

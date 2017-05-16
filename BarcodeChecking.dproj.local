@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/03/27 12:02:38.000.644,=D:\PROJECT\Code\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 12:15:20.000.065,D:\PROJECT\Code\UntPattern.pas=D:\PROJECT\Code\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 12:15:20.000.065,D:\PROJECT\Code\UntPattern.dfm=D:\PROJECT\Code\Unit1.dfm</Transaction>
+    <Transaction>2017/04/04 16:01:10.000.112,=D:\PROJECT\Code\Unit2.pas</Transaction>
+    <Transaction>2017/04/05 09:24:50.000.293,=D:\PROJECT\Code\Unit1.pas</Transaction>
+    <Transaction>2017/04/05 09:26:13.000.970,D:\PROJECT\Code\Unit1.dfm=D:\PROJECT\Code\untFrameProductionNew.dfm</Transaction>
+    <Transaction>2017/04/05 09:26:13.000.970,D:\PROJECT\Code\Unit1.pas=D:\PROJECT\Code\untFrameProductionNew.pas</Transaction>
+  </Transactions>
+</BorlandProject>

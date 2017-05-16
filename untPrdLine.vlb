@@ -1,0 +1,13 @@
+﻿[BitBtn2]
+Coordinates=10,10,56,58
+
+[Panel1]
+Coordinates=76,10,55,58
+
+[BitBtn1]
+Coordinates=141,10,56,58
+
+[]
+Coordinates=207,10,131,36
+Visible=True
+
